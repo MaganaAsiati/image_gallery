@@ -27,7 +27,8 @@ class CategoriesController < ApplicationController
   def create
     file_content = File.read(category_params['icon'].tempfile, &:read)
     encoded_string = Base64.strict_encode64(file_content)
-    @category = Category.create(user: current_user, title: category_params['title'], description: category_params['description'], icon: encoded_string )
+    @category = Category.create(user: current_user, title: category_params['title'],
+                                description: category_params['description'], icon: encoded_string)
 
     respond_to do |format|
       if @category.save
@@ -74,6 +75,6 @@ class CategoriesController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def category_params
-    params.require(:category).permit( :icon, :title, :description)
+    params.require(:category).permit(:icon, :title, :description)
   end
 end

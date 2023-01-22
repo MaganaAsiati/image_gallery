@@ -44,4 +44,3 @@ RSpec.describe 'Category', type: :feature do
     end
   end
 end
-

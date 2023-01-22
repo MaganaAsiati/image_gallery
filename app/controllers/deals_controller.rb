@@ -24,7 +24,7 @@ class DealsController < ApplicationController
   def create
     @user = current_user
     @category = Category.find(params[:category_id])
-    @deal = Deal.create(user: current_user, category_id: @category.id, title: deal_params['name'], description: deal_params['name'],
+    @deal = Deal.create(user: current_user, category_id: @category.id, title: deal_params['title'],
                         amount: deal_params['amount'])
 
     respond_to do |format|
@@ -67,7 +67,6 @@ class DealsController < ApplicationController
   def set_deal
     @deal = Deal.find(params[:id])
   end
-
 
   # Only allow a list of trusted parameters through.
   def deal_params
