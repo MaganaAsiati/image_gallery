@@ -30,10 +30,6 @@ The result should look similar to the following data model:
 - [x] Limit access to webapp resources based on authorization rules.
 - [x] Analyze in writing why you have made a coding choice using one structure over another.
 
-## Project Documentation 📄
-
-- [x] Here is the presentation video [link](https://www.loom.com/share/41d82d0f57974b6589261248f0cd354d)👈
-- [x] Here is the deployed app in [Heroku](https://floating-stream-68134.herokuapp.com)👈
 
 ## Built With 🛠️
 
@@ -75,7 +71,7 @@ Clone the repository using the GitHub link provided below.
 In the terminal, go to your file directory and run this command.
 
 ```
-$ git clone git@github.com:mavericks-db/BudgetOnRails.git
+$ git@github.com:MaganaAsiati/image_gallery.git
 ```
 
 ### Usage
