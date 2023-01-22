@@ -24,7 +24,7 @@ class DealsController < ApplicationController
   def create
     @user = current_user
     @category = Category.find(params[:category_id])
-    @deal = Deal.create(user: current_user, category_id: @category.id, title: deal_params['name'], description: deal_params['name'],
+    @deal = Deal.create(user: current_user, category_id: @category.id, title: deal_params['title'], description: deal_params['description'],
                         amount: deal_params['amount'])
 
     respond_to do |format|
