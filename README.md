@@ -9,7 +9,7 @@
 
 The result should look similar to the following data model:
 
-<img width="374" alt="erd_diagram" src="https://user-images.githubusercontent.com/98527559/188287544-68d6fb5b-a265-4001-b1ac-3dc74393d720.png">
+![image](https://user-images.githubusercontent.com/95297251/213945863-09aec115-ec10-45a9-bcb8-61b0880dd035.png)
 
 ## Learning Objectives 🔖
 - [x] Use ruby gems as software packages system.
