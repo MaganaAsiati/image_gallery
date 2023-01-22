@@ -68,7 +68,6 @@ class DealsController < ApplicationController
     @deal = Deal.find(params[:id])
   end
 
-
   # Only allow a list of trusted parameters through.
   def deal_params
     params.require(:deal).permit(:title, :amount, :icon, :user_id, :category_id)
